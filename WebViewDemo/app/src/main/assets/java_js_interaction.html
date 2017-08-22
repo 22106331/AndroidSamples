@@ -1,0 +1,44 @@
+<html>
+<head>
+    <script type="text/javascript">
+    function sayHello() {
+        alert("Hello")
+    }
+
+    function alertMessage(message) {
+        alert(message)
+    }
+
+    function sumToJava1(a,b){
+        window.android.sumToJava(a,b)
+    }
+
+    function sumToJava(a,b){
+        return a+b;
+    }
+
+    function toastMessage(message) {
+        window.android.toastMessage(message)
+    }
+
+    function sum(a,b) {
+       var sum = window.android.sum(a,b)
+       alert("the sum of a:"+a+",b:"+b+"is "+sum+"!")
+    }
+
+    </script>
+
+</head>
+<body style="background:#dddddd">
+The below content is a h5 page!
+<br/>
+<br/>
+Java-Javascript Interaction In Android
+<br/>
+<br/>
+<button onclick="toastMessage('this is a message!')">js调用java - toastMessage(有参数无返回值)</button>
+<br/>
+<br/>
+<button onclick="sum(1,2)">js调用java - sum(有参数有返回值)</button>
+</body>
+</html>

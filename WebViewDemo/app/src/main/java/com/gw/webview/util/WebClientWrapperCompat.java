@@ -1,4 +1,4 @@
-package com.gw.h5.util;
+package com.gw.webview.util;
 
 import android.annotation.TargetApi;
 import android.graphics.Bitmap;

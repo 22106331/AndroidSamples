@@ -1,4 +1,4 @@
-package com.gw.h5.base;
+package com.gw.webview.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

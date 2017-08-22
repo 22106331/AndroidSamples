@@ -1,5 +1,8 @@
-package com.gw.h5.util;
+package com.gw.webview.util;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Build;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -8,7 +11,9 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.widget.Toast;
 
-import com.gw.h5.MainApplication;
+import com.gw.webview.MainApplication;
+
+import java.io.File;
 
 /**
  * Created by GongWen on 17/8/22.
@@ -21,6 +26,18 @@ public class Utils {
 
     public static void toastShort(CharSequence text) {
         Toast.makeText(MainApplication.getInstance(), text, Toast.LENGTH_SHORT).show();
+    }
+
+    public static File getWebViewCacheDir() {
+        File cacheDir = new File(MainApplication.getInstance().getCacheDir(), "webview_cache");
+        cacheDir.mkdirs();
+        return cacheDir;
+    }
+
+    public static boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager = (ConnectivityManager) MainApplication.getInstance().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        return networkInfo != null && networkInfo.isAvailable() && networkInfo.isConnected();
     }
 
     public static StringBuilder onReceivedError2String(WebResourceRequest request, WebResourceError error) {

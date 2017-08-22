@@ -1,10 +1,10 @@
-package com.gw.h5.base;
+package com.gw.webview.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
 
-import com.gw.h5.R;
+import com.gw.webview.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

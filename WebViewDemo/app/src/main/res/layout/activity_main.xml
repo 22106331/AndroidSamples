@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.gw.h5.MainActivity">
+    tools:context="com.gw.webview.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -24,8 +24,24 @@
         android:id="@+id/goErrorWebActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
+        android:layout_marginTop="40dp"
         android:text="H5 ErrorListener Demo"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/goJsWebActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="WebView js 交互 Demo"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/goSettingsWebActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="WebView Settings Demo"
         android:textSize="20sp" />
 
 </LinearLayout>

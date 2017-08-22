@@ -1,4 +1,4 @@
-package com.gw.h5;
+package com.gw.webview;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -12,9 +12,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
-import com.gw.h5.base.BaseToolbarActivity;
-import com.gw.h5.util.Utils;
-import com.gw.h5.util.WebClientWrapperCompat;
+import com.gw.h5.H5WebView;
+import com.gw.h5.IH5ErrorListener;
+import com.gw.webview.base.BaseToolbarActivity;
+import com.gw.webview.util.Utils;
+import com.gw.webview.util.WebClientWrapperCompat;
 
 import butterknife.BindView;
 import butterknife.OnClick;
