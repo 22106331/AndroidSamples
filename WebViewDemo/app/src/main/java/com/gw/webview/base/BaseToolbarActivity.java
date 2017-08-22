@@ -12,6 +12,8 @@ import butterknife.Unbinder;
 
 /**
  * Created by GongWen on 17/8/21.
+ * Toolbar.setTitle not work
+ * https://stackoverflow.com/questions/26486730/in-android-app-toolbar-settitle-method-has-no-effect-application-name-is-shown
  */
 
 public abstract class BaseToolbarActivity extends BaseActivity {
@@ -26,6 +28,7 @@ public abstract class BaseToolbarActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
         unbinder = ButterKnife.bind(this);
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
     }
 
